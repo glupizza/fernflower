@@ -5,12 +5,9 @@ plugins {
 }
 pmd{
   toolVersion = "6.55.0"
-  isIdnoreFailures = true
+  isIgnoreFailures = true
 }
 
-tasks.withType<Pmd> {
-  exclude("**/test/**")
-}
 tasks.compileJava {
   sourceCompatibility = "17"
   targetCompatibility = "17"
